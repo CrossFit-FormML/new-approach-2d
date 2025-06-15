@@ -110,8 +110,7 @@ with open('clean_metadata.pkl', 'rb') as f:
     preprocessing_params = metadata['preprocessing']
 ```
 
-1. **모델 파일 용량**: H5 모델 파일들은 용량이 클 수 있으므로 Git LFS 사용 권장
-2. **데이터 전처리**: 각 운동별 스케일러(scaler.pkl)와 메타데이터(metadata.pkl) 파일이 필요
-3. **실행 환경**: CUDA 지원 GPU 환경에서 실행 시 학습 속도 향상
-4. **메모리 요구사항**: 대용량 데이터셋 처리를 위해 충분한 RAM 필요
+1. **데이터 전처리**: 각 운동별 스케일러(scaler.pkl)와 메타데이터(metadata.pkl) 파일이 필요
+2. **실행 환경**: CUDA 지원 GPU 환경에서 실행 시 학습 속도 향상
+3. **메모리 요구사항**: 대용량 데이터셋 처리를 위해 충분한 RAM 필요
 
