@@ -1,5 +1,5 @@
 # Crossfit-2D 프로젝트
-(2D 데이터셋에서의 성능이 크게 좋지 못해 new-approach-3d에서 추가적인 3D 데이터셋에 대하여 실험을 진행하였습니다!)
+(2D 데이터셋에서 차원을 확장하여 new-approach-3d 레포지토리에서 추가적인 3D 데이터셋에 대하여 실험을 진행하였습니다!)
 
 # 전체 크로스핏 데이터셋 분석 프로세스 순서도(Repository명)
 initial-approach(초기 접근법) -> new-approach-2d(2D 데이터셋 개선) -> new-approach-3d(차원 확장)
