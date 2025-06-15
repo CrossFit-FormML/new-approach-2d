@@ -33,9 +33,9 @@
 ### 코드 실행 방법
 
 1. **환경 설정**
-   - 구글 코랩 A100 GPU사용
+   - 구글 코랩 A100 GPU사용 (코랩에서 csv파일만 런타임에 넣어주신다면 그대로 실행하셔도 됩니다!)
    - Python 3.11.13
-   - 필요한 라이브러리: tensorflow, mediapipe, opencv-python, pandas, numpy, scikit-learn (버전은 requirements.txt에 명시해두었습니다.)
+   - 필요한 라이브러리: tensorflow, pandas, numpy, scikit-learn, matplotlib등 (버전은 requirements.txt에 명시해두었습니다.)
 
 3. **실행 순서**
    ```bash
