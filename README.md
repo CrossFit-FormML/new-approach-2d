@@ -1,7 +1,7 @@
 # Crossfit-2D 프로젝트
 
 ## 1. 프로젝트 개요
-
+크로스핏 운동 중 4가지 핵심 동작인 Deadlift, Press, Squat, Clean에서 발생하는 정상 자세와 오류자세를 분류하는 딥러닝 기반 시스템을 개발하는 것을 목표로 합니다.
 
 
 ## 2. 실험 코드 제출
@@ -33,16 +33,17 @@
 ### 코드 실행 방법
 
 1. **환경 설정**
-   - Python 3.8+ 권장
-   - 필요한 라이브러리: tensorflow, mediapipe, opencv-python, pandas, numpy, scikit-learn
+   - 구글 코랩 A100 GPU사용
+   - Python 3.11.13
+   - 필요한 라이브러리: tensorflow, mediapipe, opencv-python, pandas, numpy, scikit-learn (버전은 requirements.txt에 명시해두었습니다.)
 
-2. **실행 순서**
+3. **실행 순서**
    ```bash
    # Jupyter Notebook 실행
    jupyter notebook crossfit_plus_2d.ipynb
    ```
 
-3. **노트북 실행 가이드**
+4. **노트북 실행 가이드**
    - 셀 단위로 순차적으로 실행
    - 각 운동별 데이터 로드 및 전처리
    - 모델 학습 및 평가
@@ -55,31 +56,16 @@
 
 **원본 데이터셋:**
 - **데이터셋 명**: 크로스핏 동작 데이터셋
-- **출처 URL**: 
-- **라이선스**: 
-- **데이터 수집 기간**:
-- **참여자 수**: 150명 
-
+- **출처 URL**: [https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&searchKeyword=%ED%81%AC%EB%A1%9C%EC%8A%A4%ED%95%8F%20%EB%8F%99%EC%9E%91%20%EB%8D%B0%EC%9D%B4%ED%84%B0&aihubDataSe=data&dataSetSn=71422]
+  
 #### 데이터 전처리
 
 ### 모델 정보
 
 #### Clean 운동 모델 (best_clean_cnn_model.h5)
-- 아키텍처: CNN 기반
-- 입력: 정규화된 포즈 랜드마크 시퀀스
-- 출력: 운동 품질 점수 예측
-
 #### Deadlift 운동 모델 (best_deadlift_cnn_model.h5)
-- 아키텍처: CNN 기반
-- 특징: 데드리프트 특화 자세 분석
-
 #### Press 운동 모델 (best_press_cnn_lstm_model.h5)
-- 아키텍처: CNN-LSTM 하이브리드
-- 특징: 시계열 동작 패턴 학습
-
 #### Squat 운동 모델 (best_squat_cnn_model.h5)
-- 아키텍처: CNN 기반
-- 특징: 스쿼트 동작 품질 평가
 
 ### 실험 결과
 
